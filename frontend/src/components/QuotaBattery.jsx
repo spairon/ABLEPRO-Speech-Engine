@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BatteryLow, BatteryMedium, BatteryFull, Zap } from 'lucide-react';
 
 const QuotaBattery = () => {
-  const [quota, setQuota] = useState({ used_seconds: 0, limit_seconds: 3600 });
+  const [quota, setQuota] = useState({ used_seconds: 0, limit_seconds: 10800 });
   const [loading, setLoading] = useState(true);
 
   const fetchQuota = async () => {

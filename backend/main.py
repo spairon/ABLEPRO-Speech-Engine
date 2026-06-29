@@ -122,7 +122,7 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 # Quota Manager
 # ---------------------------------------------------------------------------
 QUOTA_FILE = Path("quota.json")
-QUOTA_LIMIT = 3600  # 60 minutes default
+QUOTA_LIMIT = 10800  # 3 hours limit (10800 seconds)
 
 def get_quota() -> dict:
     if QUOTA_FILE.exists():
