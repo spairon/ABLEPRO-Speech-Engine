@@ -106,7 +106,9 @@ Ta-da! 🎉 You are ready to start analyzing speech!
 ## 📊 Demo Mode (Presentation View)
 
 For hackathon judging or executive presentations, toggle the **"Presentation Mode (Demo)"** checkbox on the top right of the dashboard. This collapses the deep technical metrics into a gorgeous, high-level Executive Summary Card showcasing the Audio Duration, Number of Speakers, Fallback Status, Execution Time, and Final Clinical Diagnosis.
-
+SARVAM AI -> API Billing FREE upto 3hours, 100% Accuracy
+When Offline 
+Switches to Local whisper model medium -> unlimited Transcriptions 85% accuracy (NOTE: Whisper model may needs fast processing)
 ---
 
 ## ⚠️ Known Limitations & Future Work
