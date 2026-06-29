@@ -2,7 +2,7 @@
 
 **A highly robust, explainable AI pipeline for clinical Kannada speech analysis.**
 
-ABLEPRO is an advanced, hybrid cloud/offline medical diagnostic tool. It takes raw Kannada speech audio and automatically extracts clinical biomarkers, transcribes the speech, perfectly diarizes the speakers, and provides an explainable prediction of the patient's demographics and vocal health.
+ABLEPRO is an advanced, hybrid cloud/offline medical diagnostic tool. It takes raw Kannada speech audio and automatically extracts clinical biomarkers, transcribes the speech, perfectly diarizes the s[...]
 
 ---
 
@@ -10,13 +10,13 @@ ABLEPRO is an advanced, hybrid cloud/offline medical diagnostic tool. It takes r
 
 1. **Hybrid Cloud + Offline AI (Automatic Failover):**
    - **Primary:** Lightning-fast Sarvam AI Saaras v3 cloud API.
-   - **Bulletproof Fallback:** If the network drops or API credits deplete, the system instantly catches the exception (zero latency) and routes the audio to a local **Whisper Large-v3** model sitting in the GPU VRAM.
+   - **Bulletproof Fallback:** If the network drops or API credits deplete, the system instantly catches the exception (zero latency) and routes the audio to a local **Whisper Large-v3** model sitting[...]
 2. **GPU Accelerated Inference on Consumer Hardware:**
    - Squeezed the massive 1.5-billion parameter Whisper Large-v3 model into a 6GB RTX 4050 GPU using `int8_float16` quantization and CTranslate2.
 3. **Medical Domain Adaptation:**
    - Implements a custom JSON-based dictionary spellchecker that instantly corrects out-of-vocabulary or hallucinated medical terms in the Kannada language.
 4. **Explainable AI (XAI):**
-   - The Random Forest classifier doesn't just output "Male" or "Atypical". It provides a human-readable clinical explanation citing exact acoustic metrics (e.g., Pitch, Jitter) and their threshold violations.
+   - The Random Forest classifier doesn't just output "Male" or "Atypical". It provides a human-readable clinical explanation citing exact acoustic metrics (e.g., Pitch, Jitter) and their threshold vi[...]
 5. **Live Progress Streaming (SSE):**
    - The FastAPI backend streams real-time state updates using Server-Sent Events, ensuring the React UI remains fully responsive with dynamic progress badges.
 6. **Downloadable PDF Reports:**
@@ -105,10 +105,12 @@ Ta-da! 🎉 You are ready to start analyzing speech!
 
 ## 📊 Demo Mode (Presentation View)
 
-For hackathon judging or executive presentations, toggle the **"Presentation Mode (Demo)"** checkbox on the top right of the dashboard. This collapses the deep technical metrics into a gorgeous, high-level Executive Summary Card showcasing the Audio Duration, Number of Speakers, Fallback Status, Execution Time, and Final Clinical Diagnosis.
-SARVAM AI -> API Billing FREE upto 3hours, 100% Accuracy
-When Offline 
-Switches to Local whisper model medium -> unlimited Transcriptions 85% accuracy (NOTE: Whisper model may needs fast processing)
+For hackathon judging or executive presentations, toggle the **"Presentation Mode (Demo)"** checkbox on the top right of the dashboard. This collapses the deep technical metrics into a gorgeous, high-level view.
+
+### Features:
+- **Sarvam AI Cloud:** API Billing FREE up to 3 hours, 100% Accuracy
+- **When Offline:** Switches to Local Whisper model (medium) → unlimited transcriptions at 85% accuracy *(Note: Whisper model may need fast processing)*
+
 ---
 
 ## ⚠️ Known Limitations & Future Work
